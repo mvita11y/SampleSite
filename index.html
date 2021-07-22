@@ -98,10 +98,24 @@
 <script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRuntimeErrors-4f205f2c14e769b448bcf477de2938c681660d5038bc464e3700256713ebe261.js"></script>
 </head>
 
-<body>
+<body class="">
   <a class="usa-skipnav" href="#main-content">Skip to main content</a>
 
-<div class="usa-banner">
+<nav aria-label="Site Map">
+  <ul id="navcontent" class="mainnav">
+    <li>
+      <button aria-expanded="false" aria-controls="id-brand-menu">Site Map</button>
+      <ul id="id-brand-menu" style="display: none;">
+        <li><a href="#index.html#main-content">Mission</a></li>
+        <li><a href="#index.html#values">Values</a></li>
+        <li><a href="#index.html#audience">Audience</a></li>
+        <li><a href="#index.html#voice">Voice and tone</a></li>
+      </ul>
+    </li>
+    
+    
+  </ul>
+</nav><div class="usa-banner">
 	<div class="usa-accordion">
 		<header class="usa-banner__header">
 			<div class="usa-banner__inner">
@@ -151,36 +165,20 @@
 		<button class="usa-menu-btn">Menu</button>
 	</div>
 	<nav aria-label="Primary navigation" class="usa-nav">
-		<div class="usa-nav__inner"><button class="usa-nav__close"><img src="/assets/img/close.svg" alt="close"></button>
-			<nav aria-label="Pati Montero's design system">
-  <ul id="navcontent" class="mainnav">
-    <li>
-      <button aria-expanded="false" aria-controls="id-brand-menu">Brand</button>
-      <ul id="id-brand-menu" style="display: none;">
-        <li><a href="#index.html#main-content">Mission</a></li>
-        <li><a href="#index.html#values">Values</a></li>
-        <li><a href="#index.html#audience">Audience</a></li>
-        <li><a href="#index.html#voice">Voice and tone</a></li>
-      </ul>
-    </li>
-    <li>
-      <button aria-expanded="false" aria-controls="id-style-menu">Style</button>
-      <ul id="id-style-menu" style="display: none;">
-        <li><a href="#style.html#main-content">Logo</a></li>
-        <li><a href="#style.html#colour">Colour</a></li>
-        <li><a href="#style.html#typography">Typography</a></li>
-      </ul>
-    </li>
-    <li>
-      <button aria-expanded="false" aria-controls="id-components-menu">Components</button>
-      <ul id="id-components-menu" style="display: none;">
-        <li><a href="#components.html#main-content">Buttons</a></li>
-        <li><a href="#components.html#links">Links</a></li>
-        <li><a href="#components.html#texts">Texts</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav></div>
+		<div class="usa-nav__inner"><button class="usa-nav__close"><img src="/assets/img/close.svg" alt="close"></button><ul class="usa-nav__primary usa-accordion">
+				
+				
+				<li class="usa-nav__primary-item">
+					<a class=" usa-nav__link  usa-current" href="javascript:void(0)"><span>Simple link</span></a>
+				</li>
+			<li class="usa-nav__primary-item">
+					<a class="usa-nav__link" href="javascript:void(0)"><span>Simple link</span></a>
+				</li><li class="usa-nav__primary-item">
+					<a class="usa-nav__link" href="javascript:void(0)"><span>Simple link</span></a>
+				</li><li class="usa-nav__primary-item">
+					<a class="usa-nav__link" href="javascript:void(0)"><span>Simple link</span></a>
+				</li></ul>
+			</div>
 		
 	</nav>
 </header>
@@ -261,6 +259,7 @@
 <script src="js.js"></script>
 <script src="menuv.js"></script>
   <script src="https://cdpn.io/cp/internal/boomboom/pen.js?key=pen.js-c6fa338f-20e0-117d-9800-b303b43c68dd" crossorigin=""></script>
+
 
 
 </body></html>
