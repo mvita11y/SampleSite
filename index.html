@@ -64,15 +64,6 @@
   padding: 1em;
 }
 
-.mainnav button::after {
-  content: "";
-  border-bottom: 1px solid #000;
-  border-right: 1px solid #000;
-  height: 0.5em;
-  margin-left: 0.75em;
-  width: 0.5em;
-  transform: rotate(45deg);
-}
 
 .mainnav button:focus {
   border-color: #005a9c;
@@ -168,7 +159,19 @@
 		<div class="usa-nav__inner"><button class="usa-nav__close"><img src="/assets/img/close.svg" alt="close"></button><ul class="usa-nav__primary usa-accordion">
 				
 				
-				<li class="usa-nav__primary-item">
+				<div id="navcontent">
+    <li>
+      <button class="usa-accordion__button usa-nav__link  usa-current" aria-expanded="false" aria-controls="id-brand-menu"><span>Site Map</span></button>
+      <ul id="id-brand-menu" style="box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 16px 0px; z-index: 1; background-color: rgb(249, 249, 249); display: none;" hidden="">
+        <li><a href="#index.html#main-content">Mission</a></li>
+        <li><a href="#index.html#values">Values</a></li>
+        <li><a href="#index.html#audience">Audience</a></li>
+        <li><a href="#index.html#voice">Voice and tone</a></li>
+      </ul>
+    </li>
+    
+    
+  </div><li class="usa-nav__primary-item">
 					<a class=" usa-nav__link  usa-current" href="javascript:void(0)"><span>Simple link</span></a>
 				</li>
 			<li class="usa-nav__primary-item">
