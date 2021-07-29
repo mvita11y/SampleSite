@@ -121,11 +121,20 @@
 </header>
 
 <main id="main-content">
-	<div id="ex1">
+	
+
+	<section class="grid-container usa-section">
+		<div class="grid-row grid-gap">
+			<div class="tablet:grid-col-4">
+				<h2 class="font-heading-xl margin-top-0 tablet:margin-bottom-0">News and Stories</h2><p>The tagline should inspire confidence and interest, focusing on the value that your overall approach offers to your audience. Use a heading typeface and keep your tagline to just a few words, and don’t confuse or mystify.</p> <a class="usa-button">News and Stories</a>
+			</div> 
+      
+			<div class="tablet:grid-col-8 usa-prose">
+				<div id="ex1">
 <section id="myCarousel" class="carousel" aria-roledescription="carousel" aria-label="Highlighted television shows">
   <div class="carousel-inner">
     <div class="controls">
-      <button class="rotation pause" aria-label="Stop automatic slide show">
+      <button class="rotation play" aria-label="Start automatic slide show">
         <svg width="42" height="34" version="1.1" xmlns="http://www.w3.org/2000/svg">
           <rect class="background" x="2" y="2" rx="5" ry="5" width="38" height="24"></rect>
           <rect class="border" x="4" y="4" rx="5" ry="5" width="34" height="20"></rect>
@@ -190,7 +199,7 @@
         <!-- .carousel-caption -->
       </div>
       <!-- .item -->
-      <div class="carousel-item" role="group" aria-roledescription="slide" aria-label="3 of 5">
+      <div class="carousel-item active" role="group" aria-roledescription="slide" aria-label="3 of 5">
         <div class="carousel-image">
           <a href="#">
             <img src="https://www.w3.org/TR/wai-aria-practices/examples/carousel/images/trustslide-2__800x600.jpg" alt="Mom and daughter play Daniel Tiger game on notebook computer.">
@@ -208,7 +217,7 @@
         <!-- .carousel-caption -->
       </div>
       <!-- .item -->
-      <div class="carousel-item active" role="group" aria-roledescription="slide" aria-label="4 of 5">
+      <div class="carousel-item" role="group" aria-roledescription="slide" aria-label="4 of 5">
         <div class="carousel-image">
           <a href="#">
             <img src="https://www.w3.org/TR/wai-aria-practices/examples/carousel/images/foyleswarslide__800x600.jpg" alt="A man in a suit and fedora and a woman with coiffed hair look sternly into the camera.">
@@ -258,7 +267,9 @@
     </div>
    
   </div>
- <div id="renderDots" class="renderDots"><ul class="slick-dots" role="tablist"><li aria-selected="false" aria-controls="navigation-0" id="slick-slide-0" class=""><button type="button" data-role="none" role="button" aria-required="false" tabindex="0" aria-labelledby="carousel-label-0" id="button-carousel-0">0</button></li><li aria-selected="false" aria-controls="navigation-1" id="slick-slide-1" class=""><button type="button" data-role="none" role="button" aria-required="false" tabindex="0" aria-labelledby="carousel-label-1" id="button-carousel-1">1</button></li><li aria-selected="false" aria-controls="navigation-2" id="slick-slide-2" class=""><button type="button" data-role="none" role="button" aria-required="false" tabindex="0" aria-labelledby="carousel-label-2" id="button-carousel-2">2</button></li><li aria-selected="false" aria-controls="navigation-3" id="slick-slide-3" class="slick-active"><button type="button" data-role="none" role="button" aria-required="false" tabindex="0" aria-labelledby="carousel-label-3" id="button-carousel-3">3</button></li><li aria-selected="false" aria-controls="navigation-4" id="slick-slide-4" class=""><button type="button" data-role="none" role="button" aria-required="false" tabindex="0" aria-labelledby="carousel-label-4" id="button-carousel-4">4</button></li></ul></div>
+ <div id="renderDots" class="renderDots" style="
+    display: none;
+"><ul class="slick-dots" role="tablist"><li aria-selected="false" aria-controls="navigation-0" id="slick-slide-0" class=""><button type="button" data-role="none" role="button" aria-required="false" tabindex="0" aria-labelledby="carousel-label-0" id="button-carousel-0">0</button></li><li aria-selected="false" aria-controls="navigation-1" id="slick-slide-1" class=""><button type="button" data-role="none" role="button" aria-required="false" tabindex="0" aria-labelledby="carousel-label-1" id="button-carousel-1">1</button></li><li aria-selected="false" aria-controls="navigation-2" id="slick-slide-2" class="slick-active"><button type="button" data-role="none" role="button" aria-required="false" tabindex="0" aria-labelledby="carousel-label-2" id="button-carousel-2">2</button></li><li aria-selected="false" aria-controls="navigation-3" id="slick-slide-3" class=""><button type="button" data-role="none" role="button" aria-required="false" tabindex="0" aria-labelledby="carousel-label-3" id="button-carousel-3">3</button></li><li aria-selected="false" aria-controls="navigation-4" id="slick-slide-4" class=""><button type="button" data-role="none" role="button" aria-required="false" tabindex="0" aria-labelledby="carousel-label-4" id="button-carousel-4">4</button></li></ul><ul class="slick-dots" role="tablist"><li aria-selected="false" aria-controls="navigation-0" id="slick-slide-0"><button type="button" data-role="none" role="button" aria-required="false" tabindex="0" aria-labelledby="carousel-label-0" id="button-carousel-0">0</button></li><li aria-selected="false" aria-controls="navigation-1" id="slick-slide-1"><button type="button" data-role="none" role="button" aria-required="false" tabindex="0" aria-labelledby="carousel-label-1" id="button-carousel-1">1</button></li><li aria-selected="false" aria-controls="navigation-2" id="slick-slide-2"><button type="button" data-role="none" role="button" aria-required="false" tabindex="0" aria-labelledby="carousel-label-2" id="button-carousel-2">2</button></li><li aria-selected="false" aria-controls="navigation-3" id="slick-slide-3"><button type="button" data-role="none" role="button" aria-required="false" tabindex="0" aria-labelledby="carousel-label-3" id="button-carousel-3">3</button></li><li aria-selected="false" aria-controls="navigation-4" id="slick-slide-4"><button type="button" data-role="none" role="button" aria-required="false" tabindex="0" aria-labelledby="carousel-label-4" id="button-carousel-4">4</button></li></ul><ul class="slick-dots" role="tablist"><li aria-selected="false" aria-controls="navigation-0" id="slick-slide-0"><button type="button" data-role="none" role="button" aria-required="false" tabindex="0" aria-labelledby="carousel-label-0" id="button-carousel-0">0</button></li><li aria-selected="false" aria-controls="navigation-1" id="slick-slide-1"><button type="button" data-role="none" role="button" aria-required="false" tabindex="0" aria-labelledby="carousel-label-1" id="button-carousel-1">1</button></li><li aria-selected="false" aria-controls="navigation-2" id="slick-slide-2"><button type="button" data-role="none" role="button" aria-required="false" tabindex="0" aria-labelledby="carousel-label-2" id="button-carousel-2">2</button></li><li aria-selected="false" aria-controls="navigation-3" id="slick-slide-3"><button type="button" data-role="none" role="button" aria-required="false" tabindex="0" aria-labelledby="carousel-label-3" id="button-carousel-3">3</button></li><li aria-selected="false" aria-controls="navigation-4" id="slick-slide-4"><button type="button" data-role="none" role="button" aria-required="false" tabindex="0" aria-labelledby="carousel-label-4" id="button-carousel-4">4</button></li></ul></div>
   <!-- carousel-inner -->
 </section>
    
@@ -274,6 +285,11 @@
 
 
 </div>
+				
+
+			</div>
+		</div>
+	</section>
 
 	<section class="grid-container usa-section">
 		<div class="grid-row grid-gap">
@@ -307,9 +323,7 @@
 
 			</div>
 		</div>
-	</section>
-
-	<section class="usa-graphic-list usa-section usa-section--dark">
+	</section><section class="usa-graphic-list usa-section usa-section--dark">
 		<div class="grid-container">
 			<div class="usa-graphic-list__row grid-row grid-gap">
 				
@@ -386,4 +400,5 @@
 
 
 
-					  </html>
+					  
+<iframe scrolling="no" frameborder="0" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.06c6ee58c3810956b7509218508c7b56.html?origin=https%3A%2F%2Fmvita11y.github.io" title="Twitter settings iframe" style="display: none;"></iframe><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe"></iframe></body></html>
